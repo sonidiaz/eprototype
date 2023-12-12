@@ -21,7 +21,6 @@
     "test": "cross-env jest",
     "seed": "cross-env medusa seed -f ./data/seed.json",
     "start": "npm run build && medusa migrations run && medusa start",
-    "build:user": "medusa user --email admin2@medusa-test.com --password supersecret2",
     "start:custom": "cross-env npm run build && node --preserve-symlinks --trace-warnings index.js",
     "dev": "cross-env npm run build:server && medusa develop"
   },
