@@ -50,6 +50,9 @@ const plugins = [
       develop: {
         open: process.env.OPEN_BROWSER !== "false",
       },
+      serve: true,
+      backend: "https://eprototype-admin.vercel.app",
+      path: "/app",
     },
   },
 ];
@@ -76,7 +79,7 @@ const projectConfig = {
   store_cors: STORE_CORS,
   database_url: DATABASE_URL,
   admin_cors: ADMIN_CORS,
-  database_extra: { ssl: { rejectUnauthorized: false } },
+  // database_extra: { ssl: { rejectUnauthorized: false } },
   // Uncomment the following lines to enable REDIS
   // redis_url: REDIS_URL
 };
