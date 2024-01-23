@@ -50,9 +50,6 @@ const plugins = [
       develop: {
         open: process.env.OPEN_BROWSER !== "false",
       },
-      serve: true,
-      backend: "https://eprototype-admin.vercel.app",
-      path: "/app",
     },
   },
 ];
