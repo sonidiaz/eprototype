@@ -49,7 +49,20 @@ const plugins = [
       // only enable `serve` in development
       // you may need to add the NODE_ENV variable
       // manually
-      serve: process.env.NODE_ENV === "development",
+      // serve: process.env.NODE_ENV === "development",
+      serve: true,
+      autoRebuild: true,
+      backend: "https://backend-production-c26b.up.railway.app",
+      path: "/app",
+      outDir: "build",
+      develop: {
+        open: true,
+        port: 7001,
+        logLevel: "error",
+        stats: "normal",
+        allowedHosts: "auto",
+        webSocketURL: undefined,
+      },
       // other options...
     },
   },
